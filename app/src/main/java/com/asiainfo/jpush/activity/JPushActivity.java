@@ -1,17 +1,19 @@
 package com.asiainfo.jpush.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.asiainfo.jpush.R;
 
+import cn.jpush.android.api.InstrumentedActivity;
 import cn.jpush.android.api.JPushInterface;
 
 /**
  * 描述:Jupsh极光推送 创建时间:2/6/17/18:06 作者:小木箱 邮箱:yangzy3@asiainfo.com
  */
 
-public class JPushActivity extends Activity {
+public class JPushActivity extends InstrumentedActivity {
+
+    public static boolean isForeground = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
